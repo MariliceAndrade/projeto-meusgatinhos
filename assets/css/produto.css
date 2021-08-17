@@ -1,0 +1,52 @@
+.produto{
+    background-color: var(--branco);
+    display: flex; /*garantindo que a imagem do produto e a descrição fiquem um ao lado do outro*/
+    height: calc(100vh - 4.25rem); /*calculando a altura do viewport sizing - a altura do cabecçalho para caber em todo o tamanho definido sem ter barra de rolagem*/
+}
+
+.produto_foto{ /*config da DIV do paralaxe*/
+    background-image: url(../img/produto-capa.jpg);
+    width: 40%;
+    height: 100%;
+    background-attachment: fixed; /*criando o efeito paralaxe fixo, a img fica fixa*/
+    /*ajuste de tamanho e posicionamento da img*/
+    background-size: 49rem;
+    background-position: -22% top; /*posicionando a img mais a esquerda continuando no topo*/
+    background-repeat: no-repeat; /*não repetir a imagem*/
+}
+
+.produto_descricao{
+    width: 60%; /*ocupar 605 da largura já que a imagem usa 40%*/
+    padding-top: 3rem; /*espaçamento entre o topo da sessão e o titulo*/
+    box-sizing: border-box; /*para não alterar o tamanho total do elemento quando mexe com padding*/
+    color: var(--cinza);
+}
+
+.produto_marca{
+    text-transform: uppercase; /*texto em maisculo*/
+    font-size: 11.5rem; /*tamanho da fonte*/
+    font-weight: 800; /*peso da fonte (extra bold)*/
+    color: var(--rosaclaro);
+    letter-spacing: 0.5rem; /*espaçamento entre cada letra*/
+}
+
+.produto_divisao{
+    padding-left: 1rem; /*deixa o texto alinhado com o título - mais a esquerda*/
+    position: relative; /*serve pra depois poder reposicionar o botão de comprar (mudar para um ícone)*/
+}
+
+.produto_nome{
+    font-size: 1.375rem; /*tamanho da fonte*/
+    font-weight: 700; /*peso da fonte (bold)*/
+    line-height: 1.875rem; /*deixar o tamanho da linha maior*/
+    letter-spacing: 0.125rem; /*espaçamento entre cada letra*/
+    width: 31.875rem; /*difinindo uma largura fixa para que o texto quebre de linha depois de um certo tamanho*/
+    margin-bottom: 0.875rem;
+}
+
+.produto_texto{
+    width: 31.875rem; /*difinindo uma largura fixa para que o texto quebre de linha depois de um certo tamanho*/
+    line-height: 1.25rem; /*deixar o tamanho de cada uma das linhas maiores*/
+    letter-spacing: 0.125rem; /*espaçamento entre cada letra*/
+    margin-bottom: 1rem; /*espaçamento entre cada parágrafo*/
+}

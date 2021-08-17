@@ -1,0 +1,47 @@
+.cabecalho{
+    background-color: var(--branco);
+    width: 100%;
+    height: 4.25rem;
+    display: flex; /*um elemento do lado do outro*/
+    justify-content: space-between; /*um elemento com espaço entre o outro*/
+    align-items: center; /*alinhamento vertical de itens*/
+    color: var(--rosa);
+    letter-spacing: .25rem; /*espaçamento de cada palavra*/
+    border-bottom: 1px solid var(--rosa); /*borda em baixo do cabeçalho*/
+    box-sizing: border-box; /*garantindo que a altura (height) do meu cabeçaho é absoluta*/
+}
+
+.cabecalho_divisao{
+    display: flex; /*deixar um elemento ao lado do outro*/
+    align-items: center; /* alinhando os itens ao centro*/
+}
+
+.cabecalho_logo{
+    width: 3.25rem;
+    margin-right: .75rem;
+}
+
+.cabecalho_titulo{
+    font-size: 1.75rem; /*tamanho da fonte*/
+    text-transform: uppercase; /*letra maiúscula*/
+}
+
+.cabecalho_navegacao{
+    display: flex;
+    align-items: center;
+}
+
+.cabecalho_item{
+    position: relative; /**/
+    margin-left: 3.75rem; /*espaçamento lateal esquerda em cada item*/
+}
+
+.cabecalho_item_ativo::before{ /*p/ não alterar estilização do home, usamos o ::before*/
+    content: ""; /*pseudo elemento do <li>home*/
+    width: 100%; /*tamanho 100% do elemento que ele está sendo ativo*/
+    height: .25rem;
+    background-color: var(--laranja);
+    position: absolute; /*posicionamento do elemento*/
+    bottom: -.5rem; /*reposicionando a linha abaixo de home*/
+    border-radius: .625rem; /*bordas arredondadas*/
+}

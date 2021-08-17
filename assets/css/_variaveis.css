@@ -1,0 +1,9 @@
+:root { /*permite que as variáveis sejam utilizadas na pag inteira */
+    --branco: #FFFFFF;
+    --rosa: #F5989D; 
+    --rosaclaro: #FFC4B2;
+    --laranja: #F69679; 
+    --cinza: #808080;
+    --rosinha: #FFC4B2AB;
+
+}
