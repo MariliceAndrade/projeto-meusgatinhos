@@ -1,0 +1,85 @@
+.carrossel{
+    position: relative; /**/
+    width: 45rem;
+    height: 40rem;
+    border-radius: 10px 10px 0 0; /*topo da esquerda e direita arredondadas*/
+    overflow: hidden; /*garantir que não dê p/ ver as imagens uma ao lado da outra fora do tamanho(cotainer do carrossel)*/
+}
+
+.carrossel_botao{
+    position: absolute;
+    width: 2.25rem;
+    height: 2.25rem;
+    /*top e transform trabalham em conjunto p/ centralizar verticalmente os botões de voltar/avançar no meio do container*/
+    top: 50%;
+    transform: translateY(-50%);
+    border: none; /*sem borda padrão*/
+    border-radius: 50%; /*formato arredondado*/
+    background-color: var(--rosinhatransparente);
+    background-size: .5rem; /**/
+    background-position: center; /*posicionando no centro*/
+    background-repeat: no-repeat; /*não repetir a imagem*/
+    padding: .2rem;
+    z-index: 10;/*garantir que os botões fiquem a frente das imagens*/
+} 
+
+.botao_voltar{
+    left: 0;
+    margin-left: 1rem; /*espaçamento entre o container do carrossel e o botão*/
+    background-image: url(../img/seta-esquerda.svg);
+    background-position: .8rem center; /*centralizar o botão*/
+}
+
+.botao_avancar{
+    right: 0;
+    margin-right: 1rem; /*espaçamento entre o container do carrossel e o botão*/
+    background-image: url(../img/seta-direita.svg);
+    background-position: .95rem center; /*centralizar o botão*/
+}
+
+.carrossel_lista_produtos{
+    position: relative; /*cada imagem da lista vão ficar com position absoluta p/ poder colocar uma em cima da outra*/
+    height: 100%;
+    transition: transform .25s; /*efeito p/ quando trocar de img ver as imgs indo pra esquerda ou direita*/
+}
+
+.carrossel_produto{
+    position: absolute;
+    /*top e bottom 0 p/ gaantir que a img fique centralizada*/
+    top: o;
+    bottom: 0;
+    width: 100%;
+}
+
+.carrossel_imagem_container{
+    width: 100%;
+    height: 100%;
+}
+
+.carrossel_imagem{
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /*caso a img seja maior que o container, essa prop vaza a img sem distorcer (mantem a proporção da img)*/
+}
+
+.carrossel_indicadores{
+    position: absolute; /*pra ficar na parte debaixo do container*/
+    bottom: 0;
+    /*100% de largura por conta do display flex e just.-cont. garantindo  que os botões fiquem centralizados no meio de toda a tela*/
+    width: 100%; 
+    display: flex;
+    justify-content: center;
+}
+
+.carrossel_indicador{
+    width: 2.25rem;
+    height: .25rem;
+    background-color: var(--brancotransparente);
+    border-radius: 2rem;
+    border: none;
+    margin: .5rem 1rem;
+}
+
+.carrossel_indicador_ativo{
+    background-color: var(--laranja);
+}

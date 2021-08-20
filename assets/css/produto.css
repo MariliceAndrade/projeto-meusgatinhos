@@ -45,7 +45,7 @@
 }
 
 .produto_texto{
-    width: 31.875rem; /*difinindo uma largura fixa para que o texto quebre de linha depois de um certo tamanho*/
+    width: 41.875rem; /*difinindo uma largura fixa para que o texto quebre de linha depois de um certo tamanho*/
     line-height: 1.25rem; /*deixar o tamanho de cada uma das linhas maiores*/
     letter-spacing: 0.125rem; /*espaçamento entre cada letra*/
     margin-bottom: 1rem; /*espaçamento entre cada parágrafo*/

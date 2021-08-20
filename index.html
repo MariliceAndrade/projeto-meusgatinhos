@@ -9,7 +9,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/base.css">
     <link rel="stylesheet" href="assets/css/produto.css">
+    <link rel="stylesheet" href="assets/css/carrossel.css">
     <link rel="stylesheet" href="assets/css/cabecalho.css">
+    <link rel="stylesheet" href="assets/css/outrosprodutos.css">
     <title>Gatito</title>
 </head>
 <body>
@@ -36,9 +38,10 @@
                 <div class="produto_divisao">
                     <h3 class="produto_nome"> MAMÃE, PRETINHA, PRINCESA, PEXEJA, PETA </h3>
                     <p class="produto_texto">
-                        The food you choose for your cat will help keep them happy, healthy, and feeling extraordinary. 
-                        Help your cat be their best – inside and out – with the advanced nutrition of Gatito Pro Plan 
-                        Sensitive Skin & Stomach formulas.
+                        Meuw, se você está achando estranho que meu nome é Mamãe, você tem razão kkkkkk, minha mãe não foi muito
+                        criativa ao escolher meu nome, dizendo ela, o meu nome seria Soturnia, maaaaas ela achou que não seria um
+                        nome que todos aceitassem, então ficou na dúvida e não se decidiu. Nesse meio tempo ela se referia a mim assim:
+                        "oh mamãe coisinha mais fofa da minha vida"
                     </p>
                     <p class="produto_texto">
                         When a cat has a sensitive stomach or irritable skin, it not only impacts which food they can eat, 
@@ -52,6 +55,50 @@
                 </div>
             </article>
         </section>
+        <section class="outros_produtos">
+            <h2 class="outros_produtos_titulo"> O que gostamos de fazer </h2>
+            <article class="carrossel">
+                <button class="carrossel_botao botao_voltar" data-voltar aria-label="Botão de voltar"> 
+                </button>
+                <button class="carrossel_botao botao_avancar" data-avancar aria-label="Botão de avançar"> 
+                </button>
+                <ul class="carrossel_lista_produtos" data-lista-produtos>
+                    <a href="#" class="carrossel_produto">
+                        <li class="carrossel_imagem_container">
+                            <img src="assets/img/produto-capa2.jpg" alt="" class="carrossel_imagem">
+                        </li>
+                    </a>
+                    <a href="#" class="carrossel_produto">
+                        <li class="carrossel_imagem_container">
+                            <img src="assets/img/produto2.png" alt="" class="carrossel_imagem">
+                        </li>
+                    </a>
+                    <a href="#" class="carrossel_produto">
+                        <li class="carrossel_imagem_container">
+                            <img src="assets/img/produto3.png" alt="" class="carrossel_imagem">
+                        </li>
+                    </a>
+                    <a href="#" class="carrossel_produto">
+                        <li class="carrossel_imagem_container">
+                            <img src="assets/img/produto4.png" alt="" class="carrossel_imagem">
+                        </li>
+                    </a>
+                    <a href="#" class="carrossel_produto">
+                        <li class="carrossel_imagem_container">
+                            <img src="assets/img/produto-capa2.jpg" alt="" class="carrossel_imagem">
+                        </li>
+                    </a>
+                </ul>
+                <div class="carrossel_indicadores" data-navegacao>
+                    <button class="carrossel_indicador carrossel_indicador_ativo" data-indicador="0" aria-label="Slide 1"></button>
+                    <button class="carrossel_indicador" data-indicador="1" aria-label="Slide 2"></button>
+                    <button class="carrossel_indicador" data-indicador="2" aria-label="Slide 3"></button>
+                    <button class="carrossel_indicador" data-indicador="3" aria-label="Slide 4"></button>
+                    <button class="carrossel_indicador" data-indicador="4" aria-label="Slide 5"></button>
+                </div>
+            </article>
+        </section>
     </main>
+    <script src="assets/Js/index.js" type="module"></script>
 </body>
 </html>
