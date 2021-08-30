@@ -2,24 +2,35 @@
     background-color: var(--branco);
     display: flex; /*garantindo que a imagem do produto e a descrição fiquem um ao lado do outro*/
     height: calc(100vh - 4.25rem); /*calculando a altura do viewport sizing - a altura do cabecçalho para caber em todo o tamanho definido sem ter barra de rolagem*/
+    overflow: hidden; /*p/ a img não ultrapassar a sessão de produto*/
 }
 
 .produto_foto{ /*config da DIV do paralaxe*/
     background-image: url(../img/produto-capa.jpg);
     width: 40%;
     height: 100%;
-    background-attachment: fixed; /*criando o efeito paralaxe fixo, a img fica fixa*/
-    /*ajuste de tamanho e posicionamento da img*/
-    background-size: 49rem;
-    background-position: -22% top; /*posicionando a img mais a esquerda continuando no topo*/
+
+    /*------EFEITO PARALAXE VERDADEIRO------*/
+    background-size: cover;
+    background-position: center;
     background-repeat: no-repeat; /*não repetir a imagem*/
+    transform: translateZ(-1px) translate(-90%, 5%) scale(2.4); /*efeito profundidade na img E reposicionando a img*/
+    /*z-index: -1; /*enviando a img p/ trás do texto*/
+    
+    /*------EFEITO PARALAXE FIXO------*/
+    /*background-attachment: fixed; criando o efeito paralaxe fixo, a img fica fixa*/
+    /*ajuste de tamanho e posicionamento da img*/
+    /*background-size: 49rem;*/
+    /*background-position: -22% top; posicionando a img mais a esquerda continuando no topo*/
 }
 
 .produto_descricao{
     width: 60%; /*ocupar 605 da largura já que a imagem usa 40%*/
     padding-top: 3rem; /*espaçamento entre o topo da sessão e o titulo*/
+    padding-left: 3rem;
     box-sizing: border-box; /*para não alterar o tamanho total do elemento quando mexe com padding*/
     color: var(--cinza);
+    background-color: var(--branco); /*p/ não enxergar a img por trás da descrição*/
 }
 
 .produto_marca{

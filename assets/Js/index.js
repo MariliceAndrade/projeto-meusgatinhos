@@ -1,6 +1,7 @@
-import { Carrosel } from "./carrossel.js";
+import { Carrosel } from "./carrossel.js"
 
-const voltar = '[data-voltar]'
+//variaveis com os elementos do html p/ serem trabalhados no carrossel
+const voltar = '[data-voltar]' //valor do seletor do data atributes ( data- )
 const avancar = '[data-avancar]'
 const listaProdutos = '[data-lista-produtos]'
 const navegacao = '[data-navegacao]'

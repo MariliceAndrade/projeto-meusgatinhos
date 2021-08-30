@@ -1,8 +1,18 @@
 @import url(_reset.css);
 @import url(_variaveis.css);
 
+html{ /*efeito de paralaxe verdadeiro*/
+    height: 100vh;
+    overflow: hidden;
+}
+
 body{
     font-family: 'Overpass', sans-serif;
+    perspective: 1px; /*propriedade de pespectiva p/ efeito paralaxe verdadeiro (com profundidade - eixo z)*/
+    /*limitar o tamanho do body p/ o conteudo vazar e dar o efeito paralaxe*/
+    height: 100%;
+    overflow-x: hidden; /*escondendo tudo o que esteja na horizontal*/
+    overflow-y: scroll; /*efeito de scroll tudo que esteja na vertical*/
 }
 
 .container{

@@ -40,7 +40,7 @@
 .carrossel_lista_produtos{
     position: relative; /*cada imagem da lista vão ficar com position absoluta p/ poder colocar uma em cima da outra*/
     height: 100%;
-    transition: transform .25s; /*efeito p/ quando trocar de img ver as imgs indo pra esquerda ou direita*/
+    transition: transform .20s; /*efeito p/ quando trocar de img ver as imgs indo pra esquerda ou direita*/
 }
 
 .carrossel_produto{
