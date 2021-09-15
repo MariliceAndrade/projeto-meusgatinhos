@@ -1,6 +1,7 @@
 .carrossel{
     position: relative; /**/
-    width: 45rem;
+    /* width: 45rem; */ /*config antes do texto ao lado da img*/
+    width: 75rem;
     height: 40rem;
     border-radius: 10px 10px 0 0; /*topo da esquerda e direita arredondadas*/
     overflow: hidden; /*garantir que não dê p/ ver as imagens uma ao lado da outra fora do tamanho(cotainer do carrossel)*/
@@ -15,7 +16,7 @@
     transform: translateY(-50%);
     border: none; /*sem borda padrão*/
     border-radius: 50%; /*formato arredondado*/
-    background-color: var(--rosinhatransparente);
+    background-color: var(--brancotransparente);
     background-size: .5rem; /**/
     background-position: center; /*posicionando no centro*/
     background-repeat: no-repeat; /*não repetir a imagem*/
@@ -57,10 +58,58 @@
 }
 
 .carrossel_imagem{
-    width: 100%;
-    height: 100%;
+    /* width: 100%; 
+    height: 100%; */ /*config antes do texto ao lado da img*/
+    width: 45rem;
+    height: 40rem;
+    border-radius: 1rem;
     object-fit: cover; /*caso a img seja maior que o container, essa prop vaza a img sem distorcer (mantem a proporção da img)*/
 }
+
+.carrossel_texto_img{ /*div teste para colocar texto ao lado da img*/
+    position: absolute;
+    bottom: 0;
+    left: 740px;
+    width: 25rem;
+    height: 40rem;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.carrossel_texto_img1{
+    width: 20rem; /*difinindo uma largura fixa para que o texto quebre de linha depois de um certo tamanho*/
+    /*line-height: 1.25rem; /*deixar o tamanho de cada uma das linhas maiores*/
+    letter-spacing: 0.125rem;
+    font-size: 1.5rem; /*tamanho da fonte*/
+    font-weight: 800; /*peso da fonte (extra bold)*/
+    color: var(--branco);
+    text-align: center;
+    padding: 10px;  
+
+    border-top: 1px;
+    border-left: 1px;
+    border-right: 1px;
+    border-style: solid;
+    border-radius: .25rem;
+    border-color: #FFFFFFAB;
+}
+
+.carrossel_texto_img2{
+    width: 20rem; /*difinindo uma largura fixa para que o texto quebre de linha depois de um certo tamanho*/
+    /*line-height: 1.25rem; /*deixar o tamanho de cada uma das linhas maiores*/
+    letter-spacing: 0.125rem;
+    font-size: 1.5rem; /*tamanho da fonte*/
+    font-weight: 800; /*peso da fonte (extra bold)*/
+    color: var(--branco);
+    text-align: center;
+    padding: 10px;
+
+    border: 1px solid honeydew;
+    border-radius: .25rem;   
+}
+
 
 .carrossel_indicadores{
     position: absolute; /*pra ficar na parte debaixo do container*/

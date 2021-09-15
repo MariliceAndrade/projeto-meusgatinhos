@@ -25,7 +25,7 @@
 }
 
 .produto_descricao{
-    width: 60%; /*ocupar 605 da largura já que a imagem usa 40%*/
+    width: 60%; /*ocupar 60% da largura já que a imagem usa 40%*/
     padding-top: 3rem; /*espaçamento entre o topo da sessão e o titulo*/
     padding-left: 3rem;
     box-sizing: border-box; /*para não alterar o tamanho total do elemento quando mexe com padding*/
@@ -37,7 +37,7 @@
     text-transform: uppercase; /*texto em maisculo*/
     font-size: 11.5rem; /*tamanho da fonte*/
     font-weight: 800; /*peso da fonte (extra bold)*/
-    color: var(--rosaclaro);
+    color: #5D6C8CAB; /* var(--rosaclaro);*/
     letter-spacing: 0.5rem; /*espaçamento entre cada letra*/
 }
 
